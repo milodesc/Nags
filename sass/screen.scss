@@ -1,6 +1,39 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass";
 
-@import "compass/reset";
+* {
+  @include box-sizing("border-box");
+}
+
+body {
+  margin: 0px;
+}
+
+.grid-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.grid-container:after {
+  visibility: hidden;
+  display: block;
+  font: 0;
+  content: ' ';
+  clear: both;
+  height: 0;
+}
+
+.grid-container [class^="grid-"] {
+  margin: .5em 0;
+  background-color: lightcyan;
+}
+
+@media screen and (min-width: 480px) {
+  @for $i from 1 through 10 {
+    .grid-#{$i * 10} {
+      width: 10% * $i;
+      float: left;
+      border: 1px solid black;
+      padding: 10px;
+    }
+  }
+}
