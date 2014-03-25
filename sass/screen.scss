@@ -28,16 +28,17 @@ body {
 }
 
 @media screen and (min-width: 479px) {
-  @for $i from 1 through 10 {
-    .grid-#{$i * 10} {
-      @extend aGridClass;
-      width: 10% * $i;
-    }
-  }
 
   .aGridClass{
     float: left;
     border: 1px solid black;
     padding: 10px;
+  }
+
+  @for $i from 1 through 10 {
+    .grid-#{$i * 10} {
+      @extend .aGridClass;
+      width: 10% * $i;
+    }
   }
 }

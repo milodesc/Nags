@@ -34,59 +34,59 @@ body {
 
 @media screen and (min-width: 479px) {
   /* line 32, ../sass/screen.scss */
+  .aGridClass, .grid-10, .grid-20, .grid-30, .grid-40, .grid-50, .grid-60, .grid-70, .grid-80, .grid-90, .grid-100 {
+    float: left;
+    border: 1px solid black;
+    padding: 10px;
+  }
+
+  /* line 39, ../sass/screen.scss */
   .grid-10 {
     width: 10%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-20 {
     width: 20%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-30 {
     width: 30%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-40 {
     width: 40%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-50 {
     width: 50%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-60 {
     width: 60%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-70 {
     width: 70%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-80 {
     width: 80%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-90 {
     width: 90%;
   }
 
-  /* line 32, ../sass/screen.scss */
+  /* line 39, ../sass/screen.scss */
   .grid-100 {
     width: 100%;
-  }
-
-  /* line 38, ../sass/screen.scss */
-  .aGridClass {
-    float: left;
-    border: 1px solid black;
-    padding: 10px;
   }
 }
