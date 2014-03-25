@@ -1,13 +1,5 @@
 @import "compass";
 
-* {
-  @include box-sizing("border-box");
-}
-
-body {
-  margin: 0px;
-}
-
 .grid-container {
   max-width: 1140px;
   margin: auto;
@@ -16,29 +8,22 @@ body {
 .grid-container:after {
   visibility: hidden;
   display: block;
-  font: 0;
-  content: ' ';
+  content: "";
   clear: both;
   height: 0;
 }
 
-.grid-container [class^="grid-"] {
-  margin: .5em 0;
-  background-color: lightcyan;
-}
-
 @media screen and (min-width: 479px) {
-
-  .aGridClass{
-    float: left;
-    border: 1px solid black;
-    padding: 10px;
-  }
-
   @for $i from 1 through 10 {
     .grid-#{$i * 10} {
-      @extend .aGridClass;
+      float: left;
+      padding: 1em .5em 0;
       width: 10% * $i;
+      @include box-sizing("border-box");
+
+      section.grid-contained {
+        background-color: lightgray;
+      }
     }
   }
 }
